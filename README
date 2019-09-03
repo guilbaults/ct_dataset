@@ -1,0 +1,8 @@
+Prototype with a workaround to create the stubs (NOOP on the archive command)
+
+To be used with `lhsmtool_cmd`.
+```
+[commands]
+archive = /bin/true
+restore = /root/env/bin/python3.6 /root/ct_dataset.py --restore --fd={fd} --fid={fid} --lustre-root=/mnt/client
+```
